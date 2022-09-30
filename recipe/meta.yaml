@@ -1,5 +1,5 @@
 {% set name = "pgmpy" %}
-{% set version = "0.1.19" %}
+{% set version = "0.1.20" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pgmpy-{{ version }}.tar.gz
-  sha256: 26ae6dec78310771faa2a2bdad695720eea3eeea7e11d8ac11cf658fc873de7b
+  sha256: c40430bf78c099b38ecb233d5ed8a1a4b6dc46308a95b250146f857af3bed943
 
 build:
   skip: true  # [win]
