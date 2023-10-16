@@ -1,11 +1,11 @@
-About pgmpy
-===========
+About pgmpy-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pgmpy-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/pgmpy/pgmpy
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pgmpy-feedstock/blob/main/LICENSE.txt)
 
 Summary: A library for Probabilistic Graphical Models
 
