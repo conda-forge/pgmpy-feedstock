@@ -1,20 +1,22 @@
 {% set name = "pgmpy" %}
-{% set version = "0.1.24" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pgmpy-{{ version }}.tar.gz
-  sha256: 9b395f5ca228f1f262d6168593affae337e0fc724e4e6cfb0d776426eecc586a
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pgmpy-{{ version }}.tar.gz
+  sha256: aef361e0858bbb1de839c54b940b203170609e1822aff37fc6853e715478255a
 
 build:
-  skip: true  # [win]
   script: {{ PYTHON }} -m pip install . -vv
-  number: 2
+  number: 0
 
 requirements:
+  build:
+    - python                                 # [build_platform != target_platform]
+    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
   host:
     - python
     - pip
@@ -47,4 +49,5 @@ about:
 
 extra:
   recipe-maintainers:
+    - ankurankan
     - JohanMabille
