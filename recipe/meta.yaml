@@ -21,6 +21,7 @@ requirements:
   host:
     - python
     - pip
+    - setuptools
   run:
     - python
     - huggingface_hub >=0.23
