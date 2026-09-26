@@ -6,13 +6,13 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pgmpy-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/pgmpy-{{ version }}.tar.gz
   sha256: a62a89352f139a5d459839e54e6bfa202a7d8749e6dc6d7ceec088a71529af45
 
 build:
   skip: true  # [py<310 or py>=314]
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   build:
